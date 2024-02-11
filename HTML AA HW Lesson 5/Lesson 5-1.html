@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <style>
+        div{
+            width: 35vw;
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+        }
+        .flex1{
+            width: 30vw;
+            height: 100vh;
+            background-color: white;
+            display: grid;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+        }
+        .section1{
+            width: 30vw;
+            height: 75vh;
+            border:1px solid;
+            border-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+        }
+        .section2{
+            margin-top: -20px;
+            width: 30vw;
+            height: 15vh;
+            border:1px solid;
+            border-color: gray;
+            display: grid;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        label{
+            display: block;
+        }
+        input[type="text"]
+        {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            width: 25vw;
+            height: 3vw;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: lightgray;
+            text-overflow: ellipsis;
+            color:grey;
+        }
+        input[type="password"] {
+            margin-bottom: 15px;
+            width: 25vw;
+            height: 3vw;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: lightgray;
+            color:grey;
+        }
+        input[type="submit"] {
+            width: 25vw;
+            height: 3vw;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: lightblue;
+            color: white;
+        }
+        h2{
+            justify-content: center;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+<div>
+<div class="flex1">
+    <div class="section1">
+    <img style="hight: 20vh;width: 20vw; margin-top:50px" src="inst.png">
+        <input type="text" name="username" id="name" placeholder="Номер телефону, імя користувача або електронну адресу" required>
+
+        <input type="password" name="password" id="password" placeholder="Пароль" required>
+
+        <input type="submit" value="Увійти">
+               <p style="font-size:25px; margin-top:20px">AБО</p>
+        <h2 style="color:blue; margin-top:-15px"><img src="icons8.png">Увійти через FACEBOOK</h2>
+        <span style="color:blue">Забули пороль?<span>
+        </div>
+
+            <div class="section2">
+                    <p style="font-size:20px">Не маєте облікового запису? <span style="color:blue">Зареєструйтесь<span></span></p>
+                </div>
+
+
+
+
+
+    </div>
+</div>
+
+</body>
+</html>
