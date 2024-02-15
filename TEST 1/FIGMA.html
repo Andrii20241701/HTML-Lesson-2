@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>PROJEKT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
     <style>
         body{
             margin:0;
-            font-family: 'KoHo', sans-serif;
+            font-family: "Lato", sans-serif;
         }
-        div {
-            margin: 0;
-        }
+        /*div {*/
+        /*    margin: 0;*/
+        /*}*/
 
         /*.example_main_div div {*/
         /*    margin: 0;*/
@@ -45,59 +49,252 @@
             height: 4433px;
             width: 1440px;
             background-color: black;
-            display:flex;
+            display:column;
             justify-content: center;
             flex-wrap: wrap;
+            align-items:center;
+            flex-direction: column;
         }
         .page1{
-            margin-top:0;
-            height: 826px;
+            margin:0;
+            height: 956px;
+            width: 1440px;
+            background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+            background-size:cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+        .header {
+            height: 113px;
+            width: 1440px;
+            /*background-color:white;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /*flex-direction:column;*/
+            /*position:relative;*/
+            /*top:-350px;*/
+        }
+        .header a{
+            text-decoration: none;
+            font-size:18px;
+            margin: 40px;
+            color: rgba(255, 255, 255, 0.70);
+        }
+        .main h1{
+            /*width: 582px;*/
+            /*height: 252px;*/
+            margin-bottom: 20px;
+            font-size:80px;
+            color: #FFF;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 84px; /* 105% */
+
+                    }
+        .header h2{
+            color: #FFF;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 39.2px */
+        }
+        .main p{
+            /*margin-top:-24px;*/
+            /*margin-bottom:50px;*/
+            font-size:21px;
+            color: rgba(255, 255, 255, 0.70);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 39px; /* 185.714% */
+            letter-spacing: -0.657px;
+        }
+        .button{
+            margin-right:121px;
+            height: 44px;
+            width: 157px;
+            color:white;
+            border-radius: 5px;
+            border: 1px solid #FFF;
+            /*backdrop-filter: blur(1px);*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:16px;
+        }
+        .main{
+            margin-top:117px;
+            height: 600px;
+            width: 582px;
+            /*background-color:white;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            /*padding: 0;*/
+            /*box-sizing: border-box;*/
+            /*flex-direction:column;*/
+            /*position:relative;*/
+            /*top:-350px;*/
+            /*display:flex;*/
+            /*justify-content: center;*/
+            /*align-items:center;*/
+            /*flex-wrap: wrap;*/
+            flex-direction: column;
+        }
+        .main div p{
+            margin:0;
+        }
+        .button2{
+            margin-top:50px;
+            height: 58px;
+            width: 204px;
+            background-color:#5454D4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:20px;
+            color: #FFF;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .favicon {
+            height: 40px;
+            width: 124px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .page2 {
+            margin: 0;
+            height: 894px;
             width: 1440px;
             background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
             background-size:cover;
             display:flex;
             justify-content: center;
             align-items:center;
+            flex-wrap: wrap;
         }
-        header {
-            margin-top:0;
-            height: 113px;
-            width: 1440px;
-            background-color: white;
+        .header1 {
+            height: 140px;
+            width: 1200px;
+            /*background-color:white;*/
             display: flex;
-            justify-content: space-around;
-            align-items: start;
+            justify-content: space-between;
+            align-items: center;
             /*flex-direction:column;*/
+            /*position:relative;*/
+            /*top:-350px;*/
         }
-        h1{
+        /*.header1 a{*/
+        /*    text-decoration: none;*/
+        /*    font-size:18px;*/
+        /*    margin: 40px;*/
+        /*    color: rgba(255, 255, 255, 0.70);*/
+        }
+        .main h1{
+            margin-bottom: 20px;
             color:white;
+            font-size:80px;
+        }
+        .header1 h2{
+            /*width:588px;*/
+            font-size:60px;
+            color: #FFF;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 70px; /* 116.667% */
+        }
+        .header1 p {
+            margin-top: -40px;
+            /*margin-top:-24px;*/
+            /*margin-bottom:50px;*/
+            /*width:588px;*/
+            /*height:78px;*/
+            font-size: 21px;
+            color: rgba(255, 255, 255, 0.70);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 39px; /* 185.714% */
+            letter-spacing: -0.657px;
+        }
+        .page3 {
+            margin: 0;
+            height: 1024px;
+            width: 1440px;
+            background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .page3 h2{
+                color: #FFF;
+                text-align: center;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 70px; /* 116.667% */
+         }
+        .box {
+            height: 527px;
+            width: 1116px;
+            /*background-color:white;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /*flex-direction:column;*/
+            /*position:relative;*/
+            /*top:-350px;*/
+
+
         }
     </style>
 </head>
 <body>
-
     <div class="flex">
         <div class="page1">
-                <header>
-                    <img src="https://s3-alpha-sig.figma.com/img/2d41/4e6f/aa8cb7873c9b8d6294e697a5db1a664b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MaVGPx~-4MJ9QQJTxl7YpRHIZnr1EJEliWsri5VOszKdI~ZmZABUPjcN3TPQEcFqhcrblbxy~KLLAec32Cx~hwwpLG39j-Lc4LLMY9XsnY-BG-crVWrU6iLVV~IiyEgCNBeBAjqu789U2Xkpd95GH-1uEHUhflnEfTbk6YlQnD1JA3D68c2W0c4lUHLI6HfBIF4g18rmwk8kd2PT5z0vZqhhDjFYS1u~nIIfAli07TnAWlbGxm5Lde2pcXc5okZo3is91O040C-CeYFQxvdVZVCBjbwaJs~~MbuRXlpZ1WSSE5fUnKUAqP4MS6k6bsLpy6Wj7zCb1rE1rKDObO5t5A__"/alt="картинка" height="40" width="40" style="margin-left: 119px; margin-top: 48px;">
-                    <h1 style="margin-left: 159px; margin-top: -36px; font-size:28px">Enver</h1>
+                <div class="header">
+                    <div class="favicon">
+                    <img src="https://s3-alpha-sig.figma.com/img/2d41/4e6f/aa8cb7873c9b8d6294e697a5db1a664b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MaVGPx~-4MJ9QQJTxl7YpRHIZnr1EJEliWsri5VOszKdI~ZmZABUPjcN3TPQEcFqhcrblbxy~KLLAec32Cx~hwwpLG39j-Lc4LLMY9XsnY-BG-crVWrU6iLVV~IiyEgCNBeBAjqu789U2Xkpd95GH-1uEHUhflnEfTbk6YlQnD1JA3D68c2W0c4lUHLI6HfBIF4g18rmwk8kd2PT5z0vZqhhDjFYS1u~nIIfAli07TnAWlbGxm5Lde2pcXc5okZo3is91O040C-CeYFQxvdVZVCBjbwaJs~~MbuRXlpZ1WSSE5fUnKUAqP4MS6k6bsLpy6Wj7zCb1rE1rKDObO5t5A__"/alt="картинка" height="40" width="40">
+                    <h2>Enver</h2>
+                    </div>
         <nav>
             <a href="#">Home</a>
             <a href="#">Services</a>
             <a href="#">Our project</a>
             <a href="#">About us</a>
         </nav>
-        </header>
-        <main>
+            <div class="button">Contact us</div>
+        </div>
+        <div class="main">
             <h1>Build Your<br>
                 Awesome<br>
                 Platform</h1>
             <p>Enver studio is a digital studio that offers several services such<br> as UI/UX Design to developers, we will provide the best<br> service for those of you who use our services.</p>
-            <div class="Botton">Our services</div>
-        </main>
-
-        </header>
-                           </div>
+            <div class="button2">Our services</div>
         </div>
+            <img src="Group-1.png"/alt="Picture 1" height="713" width="656"  style="margin-top: 107px; margin-right: 52px;"/>
+    </div>
+        <div class="page2">
+            <div class="header1">
+                <h2>Why Enver Is The<br> Best Choice?</h2>
+                <p>Watch this one minute video so you understand why you should use<br> our services!</p>
+
+            </div>
+                <img src="Group-2.png"/alt="Picture 2" height="670" width="1200"/>
+               </div>
+        <div class="page3">
+<!--            <div class="header2">-->
+                <h2>The Service We Provide<br> For You</h2>
+
+
+            </div>
+
+      </div>
 </body>
 </html>
