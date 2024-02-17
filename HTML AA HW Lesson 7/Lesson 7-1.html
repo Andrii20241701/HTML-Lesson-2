@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<style>
+    header{
+        width: 95vw;
+        height: 28vh;
+        background-color: lightgrey;
+    }
+    div {
+
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items:center;
+        border: 3px solid black;
+        border-radius: 2%;
+
+        /*flex-direction: column;*/
+    }
+    main{
+        /*margin-top: 3px;*/
+        width: 60vw;
+        height: 58vh;
+        background-color: lightgrey;
+    }
+    footer{
+        /*margin-left:3px;*/
+        width: 30vw;
+        height: 58vh;
+        background-color: lightgrey;
+        /*justify-content: center;*/
+        /*align-items:center;*/
+        /*text-align:stretch;*/
+    }
+    h1 {
+        font-size: 80px;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        vertical-align:center;
+    }
+    @media screen and (min-width: 200px) and (max-width: 400px){
+
+       main{
+            width: 95vw;
+            height: 30vh;
+        }
+    footer{
+        width: 95vw;
+        height: 30vh;
+    }
+    div{
+              flex-direction: column;
+    }
+</style>
+
+<body>
+<div>
+<header>
+    <h1>A</h1>
+</header>
+    <main>
+        <h1>B</h1>
+    </main>
+    <footer>
+        <h1>C</h1>
+    </footer>
+    </div>
+
+
+</body>
+</html>
