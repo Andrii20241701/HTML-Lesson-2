@@ -2,9 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
 </head>
+<style>
+    header{
+        width: 95vw;
+        height: 28vh;
+        background-color: lightgrey;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .flex {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items:center;
+        border: 3px solid black;
+        border-radius: 2%;
+    }
+    .main1 {
+        /*margin-top: 3px;*/
+        width: 62vw;
+        height: 58vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+    main{
+        width: 62vw;
+        height: 26vh;
+        background-color: lightgrey;
+        align-items:center;
+        display:flex;
+        justify-content: center;
+    }
+    section{
+        margin-top:3px;
+        width: 20vw;
+        height: 27vh;
+        display:flex;
+        align-items:center;
+        background-color: lightgrey;
+        justify-content: center;
+    }
+    footer{
+        width: 28vw;
+        height: 56vh;
+        background-color: lightgrey;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 80px;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+
+    }
+    @media screen and (min-width: 200px) and (max-width: 500px){
+
+        header {
+            width: 65vw;
+            height: 20vh;
+        }
+        main{
+                width: 300vw;
+                height: 25vh;
+            }
+        section{
+        width:15vw;
+        height:10vh;
+    }
+
+        footer{
+            width: 65vw;
+            height: 20vh;
+    }
+    .flex {
+        flex-direction: column;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+</style>
+
 <body>
+<div class="flex">
+    <header>
+        <h1>A</h1>
+    </header>
+    <div class="main1">
+        <main>
+            <h1>B</h1>
+        </main>
+        <section>
+            <h1>C</h1>
+        </section>
+        <section>
+            <h1>D</h1>
+        </section>
+        <section>
+            <h1>E</h1>
+        </section>
+    </div>
+
+
+    <footer>
+        <h1>F</h1>
+    </footer>
+</div>
+
 
 </body>
 </html>
